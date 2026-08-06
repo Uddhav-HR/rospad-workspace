@@ -17,7 +17,7 @@ class Talker(Node):                                    # our node inherits from 
         msg.data = f'Hello ROS2! time={time.time() - self.init_time}'  # fill in the text field
         self.pub.publish(msg)                           # send the message to /chatter
         self.get_logger().info(f'Publishing: {msg.data}')  # echo to terminal
-        self.count += 1                                # increment the counter
+        # self.count += 1                                # increment the counter
 
 
 def main(args=None):
