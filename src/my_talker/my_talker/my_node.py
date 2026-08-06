@@ -14,7 +14,7 @@ class Talker(Node):                                    # our node inherits from 
 
     def publish_msg(self):                             # called by the timer every second
         msg = String()                                  # create a blank String message
-        msg.data = f'Hello ROS2! time={self.count}'  # fill in the text field
+        msg.data = f'Hello ROS2! time={s}'  # fill in the text field
         self.pub.publish(msg)                           # send the message to /chatter
         self.get_logger().info(f'Publishing: {msg.data}')  # echo to terminal
         self.count += 1                                # increment the counter
