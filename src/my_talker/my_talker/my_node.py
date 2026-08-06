@@ -1,7 +1,7 @@
 import rclpy                                          # ROS 2 Python library
 from rclpy.node import Node                           # base class for every node
 from std_msgs.msg import String                       # plain-text message type
-import
+import time
 
 
 class Talker(Node):                                    # our node inherits from Node
