@@ -9,7 +9,7 @@ class Talker(Node):                                    # our node inherits from 
         super().__init__('talker')                     # register the node name on the ROS graph
         self.pub   = self.create_publisher(String, '/chatter', 10)  # publish String on /chatter, queue 10
         self.timer = self.create_timer(1.0, self.publish_msg)       # call publish_msg every 1 second
-        self.init_time =                                   # counter tracks how many messages sent
+        self.init_time = time                                  # counter tracks how many messages sent
         self.get_logger().info('Talker started!')      # print startup message to terminal
 
     def publish_msg(self):                             # called by the timer every second
