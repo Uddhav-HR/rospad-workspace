@@ -14,7 +14,7 @@ from geometry_msgs.msg import Twist
 
 # ── Tune these ────────────────────────────────────────────────────────────────
 SPEED  = 1.0   # linear speed  (m/s)
-RADIUS = 0   # circle radius (metres)
+RADIUS = 0.3   # circle radius (metres)
 # ─────────────────────────────────────────────────────────────────────────────
 
 ANGULAR = SPEED / RADIUS   # ω = v / r
