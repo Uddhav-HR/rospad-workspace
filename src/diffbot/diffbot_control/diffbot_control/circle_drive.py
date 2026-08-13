@@ -13,7 +13,7 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 
 # ── Tune these ────────────────────────────────────────────────────────────────
-SPEED  = 0   # linear speed  (m/s)
+SPEED  = 1.0   # linear speed  (m/s)
 RADIUS = 1.0   # circle radius (metres)
 # ─────────────────────────────────────────────────────────────────────────────
 
